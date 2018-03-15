@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-sample",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "app.js",
+  "dependencies": {
+  	"express": "^4.13.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tigertv/nodejs-sample.git"
+  },
+  "author": "Max Vetrov <maxvetrov555@yandex.ru>",
+  "license": "CC-BY-1.0",
+  "bugs": {
+    "url": "http://github.com/tigertv/nodejs-sample/issues"
+  },
+  "homepage": "http://github.com/tigertv/nodejs-sample"
+}
