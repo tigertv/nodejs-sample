@@ -1,6 +1,7 @@
-/*
+//*
 var http = require('http');
 var fs = require('fs');
+const port = 8080 
 
 var server = http.createServer(function(req, res) {
 	res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -9,7 +10,7 @@ var server = http.createServer(function(req, res) {
 	var readSream = fs.createReadStream('index.html','utf8')
 	readSream.pipe(res);
 });
-server.listen(process.env.PORT);
+server.listen(port);//process.env.PORT
 //*/
 
 /*
@@ -22,6 +23,7 @@ app.get('/', function(request, response){
 });
 //*/
 
+/*
 const express = require('express')
 const app = express()
 const port = 8080 
@@ -37,3 +39,4 @@ app.listen(port, (err) => {
 
   console.log('server is listening on ${port}')
 })
+//*/
